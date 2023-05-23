@@ -87,6 +87,90 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* Base stylings */
+
+body {
+    width: auto;    
+    background-color: #234566;
+    color: #9CEF88;
+    margin: 0 15px 0 15px;
+}
+
+h1 {
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Lekton', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: 'Lekton', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Lekton', sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+
+img {
+    max-height: 300px;
+    max-width: 400px; 
+}
+
+button {
+    border-radius: 25px;
+}
+
+/* Header Stylings */
+
+header {
+    margin: 15px 0 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+header .title {
+    width: 100%;
+    
+}
+header #page-title {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+header .header-divider {
+    border: 1px solid #BEE4F4;
+    width: 100%;
+}
+
+header nav {
+    align-items: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header nav li {    
+    list-style: none;
+    padding: 0 10px 0 10px;
+}
+
+/*  Hero Section Stylings  */
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
