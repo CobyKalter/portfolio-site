@@ -87,7 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* Base stylings */
+   /* Base stylings 
+   Switched background color to:  #234566 for better contrast
+   */
 
 body {
     width: auto;    
@@ -118,6 +120,12 @@ p {
     width: 100%;
 }
 
+a {
+    color: #9CEF88;
+    font-family: 'Lekton', sans-serif;
+    text-decoration: none;
+}
+
 img {
     max-height: 300px;
     max-width: 400px; 
@@ -127,10 +135,14 @@ button {
     border-radius: 25px;
 }
 
+li {
+    font-family: 'Lekton', sans-serif;
+}
+
 /* Header Stylings */
 
 header {
-    margin: 15px 0 60px 0;
+    margin: 15px 0 42px 0;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -169,7 +181,49 @@ header nav li {
 
 /*  Hero Section Stylings  */
 
+.hero-section {
+    margin-bottom: 
+}
 
+.hero-section h3 {
+    margin-bottom: 5px;
+}
+
+.hero-section h1 {
+    margin: 5px 0 10px 0;
+}
+
+.hero-section span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section img {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    padding: 10px 0 0 10px;
+}
+
+/* About Section Stylings */
+
+.about-text {
+    padding: 0 0 5px 0;
+}
+
+.skills-list {
+    
+}
+
+
+/* Project Section Stylings */
+
+/* Contact Section Stylings */
 
 /* ==========================================================================
    Helper classes
