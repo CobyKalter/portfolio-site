@@ -249,6 +249,66 @@ header nav li {
 
 /* Project Section Stylings */
 
+/* Switched the background color and font color for the project cards to be more accessible */
+
+.project-card {
+    background-color: #08585A;
+    border: 2.5px solid #BEE4F4;
+    border-radius: 15px;
+    color: #B8FFF8;
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 40px 0;
+}
+
+.project-card figure {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+}
+
+.project-card h3, h4, p {
+    padding: 0 10px 0 18px;
+    width: 90%;
+}
+
+.project-card ul {
+    margin-bottom: 20px;
+}
+
+.project-button {
+    background-color: #FF7C09;
+    border: 1px solid #F4A574;
+    margin: 20px 0 20px 78px;
+    width: 45%;
+
+}
+
+.project-button a {
+    color: #234566;;
+    font-weight: 700;
+}
+
+#hotel-booking img {
+    height: 160px;
+    width: 250px;
+}
+
+#notes-app img {
+    height: 150px;
+    width: 250px;
+}
+
+#word-game img {
+    height: 205px;
+    width: 250px;
+}
+
+#unplugged img {
+    height: 160px;
+    width: 250px;
+}
+
 /* Contact Section Stylings */
 
 /* ==========================================================================
