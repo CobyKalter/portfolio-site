@@ -182,7 +182,7 @@ header nav li {
 /*  Hero Section Stylings  */
 
 .hero-section {
-    margin-bottom: 
+    padding-bottom: 30px;
 }
 
 .hero-section h3 {
@@ -192,6 +192,12 @@ header nav li {
 .hero-section h1 {
     color: #BEE4F4;
     margin: 5px 0 10px 0;
+}
+
+.hero-section p {
+    padding: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 .hero-section span {
@@ -285,7 +291,7 @@ header nav li {
 }
 
 .project-button a {
-    color: #234566;;
+    color: #234566;
     font-weight: 700;
 }
 
@@ -310,6 +316,38 @@ header nav li {
 }
 
 /* Contact Section Stylings */
+
+#contact fieldset {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+label {
+    width: 82%;
+}
+
+input, textarea {
+    color: #234566;
+    border: 1px solid #F4A574;
+    border-radius: 5px;
+}
+
+#name, #email, #message {
+    margin: 5px 0 15px 0;
+    width: 80%;
+}
+
+#contact-submit {
+    background-color: #FF7C09;
+    border: 1px solid #F4A574;
+    color: #234566;
+    margin-top: 10px;
+}
+
+
 
 /* ==========================================================================
    Helper classes
