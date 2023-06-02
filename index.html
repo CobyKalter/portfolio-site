@@ -15,11 +15,16 @@
     <!--CSS Stylesheets-->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Lexend+Tera&display=swap" rel="stylesheet">
-        
+
+    <!--Font Awesome Kit--> 
+    <script src="https://kit.fontawesome.com/e63f63f7cf.js" crossorigin="anonymous"></script>
+
+
     </head>
     <body>
         <header>
@@ -182,17 +187,31 @@
                         <button id="contact-submit"><submit>Send</submit></button>
                     <!--Need to add link to submit form-->
                     </fieldset>
-                    <h3>Or find me here...</h3>
-
+                </section>
+                <h3>Or find me here...</h3>
+                <section class="social-section">
                     <!-- Add icons and <a> for SM accounts -->
-                    <p>LinkedIn</p>
-                    <p>GitHub</p>
-                    <p>CodeSandbox</p>
+                    <p class="social-icon" id="linkedin">
+                       <a href="https://www.linkedin.com/in/coby-kalter/" target="_blank"> 
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </p>
+                    <p class="social-icon" id="github"> 
+                        <a href="https://github.com/CobyKalter" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </p>
+                    <ifigure class="social-icon" id="codesandbox-logo">
+                        <a href="https://codesandbox.io/u/CobyKalter" target="_blank"> 
+                        </a>
+                    </ifigure>
                 </section>
             </div>
         </main>
         <footer>
-        <!-- Add Social Media links with icons & the carbon website counter-->
+        <!-- Add the carbon website counter -->
+            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
         </footer>
     </body>
 </html>

@@ -344,10 +344,48 @@ input, textarea {
     background-color: #FF7C09;
     border: 1px solid #F4A574;
     color: #234566;
+    font-weight: 700;
     margin-top: 10px;
 }
 
+/* Social Icons */
 
+.social-section {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #BEE4F4;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+
+#codesandbox-logo a {
+  border: 1.55px solid #9CEF88;
+  height: 18px;
+  width: 18px;
+}
+
+
+/* footer */
+
+#wcb {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+#wcb.carbonbadge.wcb-d {
+  font-size: .75rem;
+}
 
 /* ==========================================================================
    Helper classes
