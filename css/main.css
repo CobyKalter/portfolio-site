@@ -231,21 +231,13 @@ header nav li {
     padding-bottom: 30px;
 }
 
-.skills-n-tools h3 {
+#skills-title {
     color: #E8EFF2;
 }
 
 .skills-list {
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row;
-}
-
-.skills-list-1 {
-    padding-left: 20px;
-}
-
-.skills-list-2 {
+    flex-flow: column;
     padding-left: 30px;
 }
 
@@ -256,6 +248,10 @@ header nav li {
 /* Project Section Stylings */
 
 /* Switched the background color and font color for the project cards to be more accessible */
+
+.projects-section h2 {
+  color: #BEE4F4;
+}
 
 .project-card {
     background-color: #08585A;
@@ -475,16 +471,118 @@ input, textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Tablet Styles */
+
+@media only screen and (min-width: 768px) {
+
+/* Header */
+
+header {
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  margin: 20px 0 80px 0; 
 }
 
+header .header-divider {
+  border: hidden;
+}
+
+header nav ul {
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+/* Main */
+
+.main-content {
+  margin: 0 25px 0 25px;
+}
+
+/* Hero */
+
+.hero-section {
+  display: flex;
+}
+
+#hero-text {
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+#hero-image {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.hero-section h3 {
+margin-bottom: 15px;
+}
+.hero-section h1 {
+  margin: 5px 0 20px 0;
+}
+
+/* About */
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.skills-n-tools {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+
+.skills-list li {
+  padding: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
+  width: 40%;
+}
+
+
+/* Projects */
+/* Contact */
+/* Social */
+/* Footer */
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+/* Header */
+/* Hero */
+/* About */
+/* Projects */
+/* Contact */
+/* Social */
+/* Footer */
+
+}
+
+/* Example media queries */
+/* @media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+
+
+/*
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
    Print styles.
