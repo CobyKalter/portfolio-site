@@ -95,7 +95,8 @@ body {
     width: auto;    
     background-color: #234566;
     color: #9CEF88;
-    margin: 0 15px 0 15px;
+    margin: 0 15px 0 30px;
+    width: 80%;
 }
 
 h1 {
@@ -255,7 +256,7 @@ header nav li {
 
 .project-card {
     background-color: #08585A;
-    border: 2.5px solid #BEE4F4;
+    box-shadow: 3px 3px #BEE4F4;
     border-radius: 15px;
     color: #B8FFF8;
     display: flex;
@@ -267,6 +268,29 @@ header nav li {
     display: flex;
     justify-content: center;
     margin: 16px 0 16px 0;
+}
+.project-card img {
+  border: 3px solid #BEE4F4;
+}
+
+#hotel-booking img {
+    height: 145px;
+    width: 225px;
+}
+
+#notes-app img {
+    height: 145px;
+    width: 225px;
+}
+
+#word-game img {
+    height: 145px;
+    width: 225px;
+}
+
+#unplugged img {
+    height: 145px;
+    width: 225px;
 }
 
 .project-card h3, h4, p {
@@ -291,34 +315,23 @@ header nav li {
     font-weight: 700;
 }
 
-#hotel-booking img {
-    height: 160px;
-    width: 250px;
-}
 
-#notes-app img {
-    height: 150px;
-    width: 250px;
-}
-
-#word-game img {
-    height: 205px;
-    width: 250px;
-}
-
-#unplugged img {
-    height: 160px;
-    width: 250px;
-}
 
 /* Contact Section Stylings */
+
+#contact {
+  margin: 0 0 60px 0;
+}
+
+#contact h2 {
+  text-align: center;
+}
 
 #contact fieldset {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 0 40px 0;
 }
 
 label {
@@ -345,6 +358,10 @@ input, textarea {
 }
 
 /* Social Icons */
+
+#social-title {
+  text-align: center;
+}
 
 .social-section {
   display: flex;
@@ -373,6 +390,10 @@ input, textarea {
 
 
 /* footer */
+
+footer p {
+  text-align: center;
+}
 
 #wcb {
   display: flex;
@@ -475,6 +496,11 @@ input, textarea {
 
 @media only screen and (min-width: 768px) {
 
+/* body */
+
+body {
+  width: fit-content;
+}
 /* Header */
 
 header {
@@ -502,11 +528,11 @@ header nav ul {
 
 .hero-section {
   display: flex;
+  padding-bottom: 40px;
 }
 
 #hero-text {
-  margin-bottom: 40px;
-  width: 50%;
+  width: 65%;
 }
 
 #hero-image {
@@ -552,10 +578,78 @@ margin-bottom: 15px;
 
 
 /* Projects */
+
+.projects-section {
+  margin-bottom: 40px;
+}
+
+.project-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.project-card {
+  width: 45%;
+}
+
+.project-card figure {
+  padding-top: 10px;
+}
+
+.project-card h3 {
+  text-align: center;
+}
+
 /* Contact */
+
+#contact {
+margin-top: 40px;
+
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#contact fieldset {
+  flex-basis: 60%;
+}
+
 /* Social */
+
+.social-section{
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  flex-basis: 15%;
+  margin-bottom: 20px;
+}
 /* Footer */
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  flex-basis: 60%;
+  text-align: justify;
+  padding-left: 25px;
+}
+
+#wcb {
+  justify-content: flex-end;
+}
+
+#wcb_p {
+  padding-right: 20px;
+}
 
 }
 
