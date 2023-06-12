@@ -660,14 +660,75 @@ footer p {
 @media only screen and (min-width: 1024px) {
 
 
+/* Header */
+
+header {
+  justify-content: center;
+}
+
+.title {
+  flex-basis: 60%;
+}
+
+header nav {
+  flex-basis: 65%;
+}
+
 /* Main */
 
 main {
-  margin: 0 40px 0 40px;
+  margin: 25px 35px 0 40px;
+}
+
+.main-content {
+  margin: 0;
+}
+
+.hero-section {
+  padding: 40px 0 80px 0;
+}
+
+#hero-image {
+  flex-basis: 40%;
+}
+
+/* About */
+
+.about-section {
+  margin: 20px 0 80px 0;
+}
+.about-text {
+  margin-bottom: 40px;
+}
+
+/* Project */
+
+.projects-section {
+  margin: 10px 0 80px 0;
+}
+
+.project-cards-wrapper {
+  justify-content: center;
+}
+
+.project-card {
+  flex-basis: 30%;
+  margin: 15px;
+}
+
+/* Contact */
+
+#contact {
+  margin: 40px 0 80px 0; 
+}
+
+/* Footer */
+
+footer {
+  margin: 20px 0 30px 0;
 }
 
 }
-
 
 /* Desktop Styles */
 @media only screen and (min-width: 1200px) {
