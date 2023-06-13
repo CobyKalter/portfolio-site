@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* Base stylings 
+   /* BASE STYLINGS
    Switched background color to:  #234566 for better contrast
    */
 
@@ -98,7 +98,7 @@ body {
 }
 
 main {
-  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 h1 {
@@ -134,9 +134,6 @@ img {
     max-width: 400px; 
 }
 
-button {
-    border-radius: 25px;
-}
 
 li {
     font-family: 'Lekton', sans-serif;
@@ -309,24 +306,30 @@ header nav li {
 .project-button {
     background-color: #FF7C09;
     border: 1px solid #F4A574;
-    margin: 20px 0 20px 78px;
-    width: 45%;
-
-}
-
-.project-button a {
+    border-radius: 25px;
     color: #234566;
     font-weight: 700;
+    margin: 20px 0 20px 78px;
+    text-align: center;
+    width: 45%;
+
 }
 
 /* Contact Section Stylings */
 
 #contact {
-  margin: 0 0 60px 0;
+  margin: 60px 0 60px 0;
 }
 
 #contact h2 {
   text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 #contact fieldset {
@@ -334,6 +337,7 @@ header nav li {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
 }
 
 label {
@@ -354,23 +358,26 @@ input, textarea {
 #contact-submit {
     background-color: #FF7C09;
     border: 1px solid #F4A574;
+    border-radius: 25px;
     color: #234566;
     font-weight: 700;
+    padding: 5px;
     margin-top: 10px;
 }
 
 /* Social Icons */
 
-#social-title {
-  text-align: center;
-}
-
 .social-section {
   display: flex;
   justify-content: space-around;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin-bottom: 10px;
   border-bottom: 1px solid #BEE4F4;
+}
+
+#social-title {
+  text-align: center;
+  width: 100%;
 }
 
 .social-icon {
@@ -384,10 +391,9 @@ input, textarea {
 }
 
 
-#codesandbox-logo a {
-  border: 1.55px solid #9CEF88;
-  height: 18px;
-  width: 18px;
+#codesandbox-logo {
+  height: 40px;
+  width: 40px;
 }
 
 
@@ -618,6 +624,7 @@ margin-top: 40px;
 
 #contact fieldset {
   flex-basis: 60%;
+  width: 60%;
 }
 
 /* Social */
@@ -722,6 +729,10 @@ main {
   margin: 40px 0 80px 0; 
 }
 
+#contact fieldset {
+  width: 50%;
+}
+
 /* Footer */
 
 footer {
@@ -777,10 +788,9 @@ main {
   flex-basis: 50%;
 }
 
-.hero-section img {
-  height: revert;
-  width: revert;
-  padding: 0;
+#hero-image {
+  height: 100%;
+  flex-basis: 50%;
 }
 
 /* About */
