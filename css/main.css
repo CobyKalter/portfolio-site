@@ -142,7 +142,7 @@ li {
 /* Header Stylings */
 
 header {
-    margin: 15px 0 42px 0;
+    margin: 30px 0 60px 0;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -223,6 +223,11 @@ header nav li {
     padding: 0 0 5px 0;
 }
 
+.about-section {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
 .about-section h2 {
     color: #BEE4F4;
 }
@@ -249,8 +254,13 @@ header nav li {
 
 /* Switched the background color and font color for the project cards to be more accessible */
 
+.projects-section {
+  margin: 40px 0 60px 0;
+}
+
 .projects-section h2 {
   color: #BEE4F4;
+  margin-bottom: 20px;
 }
 
 .project-card {
@@ -277,6 +287,11 @@ header nav li {
 #hotel-booking img {
     height: 145px;
     width: 225px;
+}
+
+#github-gallery img{
+  height: 145px;
+  width: 225px;
 }
 
 #notes-app img {
@@ -318,7 +333,7 @@ header nav li {
 /* Contact Section Stylings */
 
 #contact {
-  margin: 60px 0 60px 0;
+  margin: 80px 0 60px 0;
 }
 
 #contact h2 {
@@ -514,7 +529,7 @@ body {
 header {
   justify-content: space-around;
   flex-flow: row nowrap;
-  margin: 20px 0 80px 0; 
+  margin: 30px 0 80px 0; 
 }
 
 header .header-divider {
@@ -536,7 +551,7 @@ header nav ul {
 
 .hero-section {
   display: flex;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #hero-text {
@@ -558,7 +573,8 @@ margin-bottom: 15px;
 /* About */
 
 .about-section {
-  margin-bottom: 40px;
+  margin: 40px 0 60px 0;
+  padding-bottom: 80px;
 }
 
 .skills-n-tools {
@@ -591,15 +607,21 @@ margin-bottom: 15px;
   margin-bottom: 40px;
 }
 
+.projects-section h2 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
 .project-cards-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .project-card {
-  width: 45%;
+  flex-basis: 40%;
+  margin: 20px;
 }
 
 .project-card figure {
@@ -611,11 +633,6 @@ margin-bottom: 15px;
 }
 
 /* Contact */
-
-#contact {
-margin-top: 40px;
-
-}
 
 .form-wrapper {
   display: flex;
@@ -720,7 +737,7 @@ main {
 
 .project-card {
   flex-basis: 30%;
-  margin: 15px;
+  margin: 15px 30px;
 }
 
 /* Contact */
@@ -748,7 +765,7 @@ footer {
 
 header {
   justify-content: center;
-  margin: 50px 0 120px 0;
+  margin: 80px 0 80px 0;
 }
 
 .title {
@@ -785,7 +802,7 @@ main {
 }
 
 #hero-text {
-  flex-basis: 50%;
+  flex-basis: 65%;
 }
 
 #hero-image {
