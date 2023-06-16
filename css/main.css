@@ -321,10 +321,9 @@ header nav li {
 }
 
 .project-button {
-    background-color: #FF7C09;
-    border: 1px solid #F4A574;
-    border-radius: 25px;
-    color: #234566;
+    border: 2px solid #BEE4F4;
+    border-radius: 10px;
+    color:  #BEE4F4;
     font-weight: 700;
     margin: 20px 0 20px 78px;
     text-align: center;
@@ -363,7 +362,7 @@ label {
 
 input, textarea {
     color: #234566;
-    border: 1px solid #F4A574;
+    border: 1px solid #BEE4F4;
     border-radius: 5px;
 }
 
@@ -373,13 +372,14 @@ input, textarea {
 }
 
 #contact-submit {
-    background-color: #FF7C09;
-    border: 1px solid #F4A574;
-    border-radius: 25px;
-    color: #234566;
+    background-color: #234566;
+    border: 1px solid #9CEF88;
+    border-radius: 10px;
+    color: #9CEF88;
     font-weight: 700;
     padding: 5px;
     margin-top: 10px;
+    width: 20%;
 }
 
 /* Social Icons */
@@ -543,6 +543,11 @@ header nav ul {
   margin-right: 20px;
 }
 
+.nav-item a:hover {
+  border-bottom: 2px solid #BEE4F4;
+  padding-bottom: 5px;
+}
+
 /* Main */
 
 .main-content {
@@ -617,7 +622,7 @@ margin-bottom: 15px;
 .project-cards-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -626,12 +631,22 @@ margin-bottom: 15px;
   margin: 20px;
 }
 
+.project-card:hover {
+  box-shadow: 8px 8px #BEE4F4;
+  border: 0.25px solid #BEE4F4;
+}
+
 .project-card figure {
   padding-top: 10px;
 }
 
 .project-card h3 {
   text-align: center;
+}
+
+.project-button:hover {
+  background-color: #FF7C09;
+  color: #116568;
 }
 
 /* Contact */
@@ -646,6 +661,15 @@ margin-bottom: 15px;
   width: 60%;
 }
 
+#contact-submit{
+  width: 15%;
+}
+
+#contact-submit:hover {
+  background-color: #FF7C09;
+  color: #234566;
+}
+
 /* Social */
 
 .social-section{
@@ -657,6 +681,11 @@ margin-bottom: 15px;
   flex-basis: 15%;
   margin-bottom: 20px;
 }
+
+.social-icon:hover {
+ transform: scale(1.15);
+}
+
 /* Footer */
 
 footer {

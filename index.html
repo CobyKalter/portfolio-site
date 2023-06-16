@@ -34,9 +34,9 @@
             <div class="header-divider"></div>
             <nav id="top-nav">
                 <ul id="navlist">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -84,20 +84,6 @@
                     <h2>Projects</h2>
                     <!--Add cards for each project with image, description, and link-->
                     <div class="project-cards-wrapper">
-                        <div class="project-card" id="hotel-booking">
-                            <figure>
-                                <a href="https://8e5iuq.csb.app/"><img src="img/hotel_scrn.png" alt="hotel app screenshot"></a>
-                            </figure>
-                            <h3 class="project-title">Hotel Booking App</h3>
-                            <p class="project-description">One-page React app that features a list of hotels with listed amenities and ratings. App features a filter that will filter the list based on unique attributes of the hotel listing. The app makes use of JSX, ES6 functions, stateful components, and arrays to manipulate the DOM and filter out hotel listings based on certain data criteria.</p>
-                            <h4>Skills & Tools Used:</h4>
-                            <ul class="project-skills-list">
-                                <li>React</li>
-                                <li>JSX & ES6</li>
-                                <li>CodeSandbox</li>
-                            </ul>
-                           <a href="https://8e5iuq.csb.app/" class="project-button">View Project</a>
-                        </div>
                         <div class="project-card" id="notes-app">
                             <figure>
                                 <a href="https://smp8eb.csb.app/"><img src="img/stickynotes_scrn.png" alt="sticky notes app"></a>
@@ -129,6 +115,20 @@
                                 <li>GitHub</li>
                             </ul>
                             <a href="https://cobykalter.github.io/guess-the-word-game/" class="project-button">View Project</a>
+                        </div>
+                        <div class="project-card" id="hotel-booking">
+                            <figure>
+                                <a href="https://8e5iuq.csb.app/"><img src="img/hotel_scrn.png" alt="hotel app screenshot"></a>
+                            </figure>
+                            <h3 class="project-title">Hotel Booking App</h3>
+                            <p class="project-description">One-page React app that features a list of hotels with listed amenities and ratings. App features a filter that will filter the list based on unique attributes of the hotel listing. The app makes use of JSX, ES6 functions, stateful components, and arrays to manipulate the DOM and filter out hotel listings based on certain data criteria.</p>
+                            <h4>Skills & Tools Used:</h4>
+                            <ul class="project-skills-list">
+                                <li>React</li>
+                                <li>JSX & ES6</li>
+                                <li>CodeSandbox</li>
+                            </ul>
+                           <a href="https://8e5iuq.csb.app/" class="project-button">View Project</a>
                         </div>
                         <div class="project-card" id="github-gallery">
                             <figure>
@@ -220,6 +220,11 @@
         <!-- Add the carbon website counter -->
             <div id="wcb" class="carbonbadge wcb-d"></div>
             <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        
+        <!--JS Files-->    
+            <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
         </footer>
     </body>
 </html>
