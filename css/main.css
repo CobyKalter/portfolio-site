@@ -563,8 +563,21 @@ header {
   margin: 30px 0 80px 0; 
 }
 
+header .title {
+  flex-basis: 70%;
+  padding-left: 25px;
+}
+
 header .header-divider {
   border: hidden;
+}
+
+.ham-box {
+  display: none;
+}
+
+.navmenu, .hide{
+  display: block;
 }
 
 header nav ul {
