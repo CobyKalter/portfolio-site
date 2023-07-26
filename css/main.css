@@ -91,11 +91,16 @@ textarea {
    Switched background color to:  #234566 for better contrast
    */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     width: auto;    
     background-color: #234566;
     color: #9CEF88;
     font-size: 16px;
+    max-width: 1200px;
 }
 
 .hide {
@@ -536,19 +541,18 @@ footer p {
 /* body */
 
 body {
-  width: fit-content;
+  margin: 20px;
 }
 /* Header */
 
 header {
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row nowrap;
   margin: 30px 0 80px 0; 
 }
 
 header .title {
   flex-basis: 50%;
-  padding-left: 25px;
 }
 
 header #page-title {
@@ -572,7 +576,6 @@ header .header-divider {
 
 header nav ul {
   padding-top: 10px;
-  margin-right: 20px;
 }
 
 .nav-item a:hover {
@@ -759,18 +762,14 @@ footer p {
 
 /* Header */
 
-header {
-  justify-content: center;
-}
 
 header .title {
   flex-basis: 60%;
-  margin-left: 20px;
+  padding-left: 0;
 }
 
 header nav {
   flex-basis: 65%;
-  padding-right: 25px;
 }
 
 /* Main */
@@ -849,18 +848,14 @@ footer {
 @media only screen and (min-width: 1200px) {
 
 
- /* BODY */
+/* BODY */
  
- body {
-  padding: 25px;
- }
+
  
 /* Header */
 
 header {
-  justify-content: center;
   margin: 30px 0 80px 0;
-  padding-left: 25px;
 }
 
 header .title {
