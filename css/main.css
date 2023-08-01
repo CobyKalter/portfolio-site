@@ -311,6 +311,7 @@ header nav li {
     display: flex;
     flex-flow: column;
     margin: 0 0 40px 0;
+    padding: 15px;
 }
 
 .project-card figure {
@@ -337,7 +338,7 @@ header nav li {
     border-radius: 10px;
     color:  #BEE4F4;
     font-weight: 700;
-    margin: 20px 0 20px 78px;
+    margin: 20px 0 0 78px;
     text-align: center;
     width: 45%;
 
@@ -591,10 +592,6 @@ main {
   padding: 0;
 }
 
-.main-content {
- 
-}
-
 /* Hero */
 
 .hero-section {
@@ -684,10 +681,6 @@ margin-bottom: 15px;
 
 .project-image:hover {
   border: 3px solid #234566;
-}
-
-.project-card h3 {
-  text-align: center;
 }
 
 .project-button:hover {
@@ -812,6 +805,7 @@ header nav {
 .project-card {
   flex-basis: 30%;
   margin: 15px 30px;
+  padding: 18px;
 }
 
 /* Contact */
@@ -882,10 +876,6 @@ main {
   margin: 40px 0 40px 0;
 }
 
-.main-content {
-  
-}
-
 /* Hero */
 
 .hero-section {
@@ -942,35 +932,12 @@ main {
 
 
 .project-card {
-  flex-basis: 29%;
-  margin: 20px 20px 20px 20px;
+  flex-basis: 25%;
+  padding: 12px 12px 20px 12px;
 }
 
 .project-card img {
   max-width: 250px;
-}
-
-.project-title {
-  padding: 0 10px 0 10px;
-  margin-bottom: 40px;
-}
-
-.project-description {
-  padding: 0 31px 0 30px;
-  width: 80%;
-}
-
-.project-card h4 {
-  padding-left: 30px;
-}
-
-.project-skills-list {
-  padding-left: 45px;
-  margin-bottom: 40px;
-}
-
-.project-button {
-  margin-bottom: 30px;
 }
 
 /* Contact */
