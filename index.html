@@ -1,229 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Coby Kalter</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="">
-        <meta property="og:type" content="">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+<head>
+    <meta charset="UTF-8">
+    <title>Coby Kalter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
     <!--CSS Stylesheets-->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Lexend+Tera&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Lexend+Tera&display=swap"
+        rel="stylesheet">
 
-    <!--Font Awesome Kit--> 
+    <!--Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/e63f63f7cf.js" crossorigin="anonymous"></script>
 
 
-    </head>
-    <body>
-        <header>
-            <div class="title">
-                <h2 id="page-title">Coby Kalter</h2>
-            </div>
-            <div class="ham-box">
-                <i class="fa-solid fa-bars" id="ham-menu"></i>
-            </div>
-            <div class="header-divider"></div>
-            <nav class="navmenu hide" id="top-nav">
-                <ul id="navlist">
-                    <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#skills-title">Skills</a></li>
-                    <li class="nav-item"><a href="#projects">Projects</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h2 id="page-title">Coby Kalter</h2>
+        </div>
+        <div class="ham-box">
+            <i class="fa-solid fa-bars" id="ham-menu"></i>
+        </div>
+        <div class="header-divider"></div>
+        <nav class="navmenu hide" id="top-nav">
+            <ul id="navlist">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills-title">Skills</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-content">
+            <section class="hero-section" id="hero">
+                <div id="hero-text">
+                    <h2>Hello! My name is</h2>
+                    <h1>Coby</h1>
+                    <p>I’m a <span>Front End Developer</span> that builds user friendly sites and apps. I am looking to
+                        build things that help make our world more equitable and sustainable.</p>
+                </div>
+                <div id="hero-image">
+                    <img src="img/coby-headshot.jpg" alt="Coby Kalter">
+                </div>
+            </section>
+            <section class="about-section" id="about">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>With my experiences <a href="https://cokalter.wixsite.com/cobykalter" class="social-impact"
+                            target="_blank">supporting small businesses, government, and non-profits</a> I am looking
+                        for opportunities to apply my developer skills to make tools that will support small businesses,
+                        have a social impact, advance smart city technologies, and combat climate change.
+                    </p>
+                    <p>I like development because I enjoy the creative process of addressing user needs, determining
+                        technological feasability, and building new tools to solve unique problems. I decided to get
+                        into development because I have always enjoyed building things, taking things apart, and putting
+                        them back together again to understand how they work.</p>
+                    <p>
+                        When I’m not developing, I can be found hanging out with my wife & dog (soon to be son),
+                        listening to music from anywhere and anytime, being outside, climbing, biking, or enjoying the
+                        best bites NYC has to offer.
+                    </p>
+                </div>
+                <h3 id="skills-title">Skills & Tools</h3>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Responsive Web Design</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Git</li>
+                    <li>SQL</li>
+                    <li>ExpressJS</li>
+                    <li>APIs</li>
+                    <li>Data Analysis</li>
+                    <li>Command Line</li>
+                    <li>VS Code</li>
+                    <li>GitHub</li>
+                    <li>Chrome DevTools</li>
+                    <li>CodeSandbox</li>
+                    <li>Photoshop</li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="main-content">
-                <section class="hero-section" id="hero">
-                    <div id="hero-text">
-                        <h2>Hello! My name is</h2>
-                        <h1>Coby</h1>
-                        <p>I’m a <span>Front End Developer</span> that builds user friendly sites and apps. I am looking to build things that help make our world more equitable and sustainable.</p>
+            </section>
+            <section class="projects-section" id="projects">
+                <h2>Projects</h2>
+                <!-- Project Cards-->
+                <div class="project-cards-wrapper">
+                    <div class="project-card" id="notes-app">
+                        <figure>
+                            <a href="https://smp8eb.csb.app/" target="_blank"><img
+                                    src="img/stickynotes_scrn_resized.png" alt="sticky notes app"
+                                    class="project-image"></a>
+                        </figure>
+                        <h3 class="project-title">Sticky Notes App</h3>
+                        <p class="project-description">One page app built in React that allows a user to create, type
+                            and edit, delete, and search for post it notes. The app features a search bar to search for
+                            notes with specific words; a new note button to create a note; and a way to delete notes
+                            that are no longer needed. Using React’s stateful components, JSX and ES6, and lifecycle
+                            methods the app allows users to manipulate the DOM and manage the data of each note, while
+                            saving the changes to the local storage for continuous engagement. </p>
+                        <h4>Skills & Tools Used:</h4>
+                        <ul class="project-skills-list">
+                            <li>React</li>
+                            <li>JSX & ES6</li>
+                            <li>Lifecycle Methods</li>
+                            <li>CodeSandbox</li>
+                            <li>Chrome DevTools</li>
+                        </ul>
+                        <a href="https://smp8eb.csb.app/" class="project-button" target="_blank">View Project</a>
+                        <a href="https://codesandbox.io/s/smp8eb" class="project-button" target="_blank">View Code</a>
                     </div>
-                    <div id="hero-image">
-                        <img src="img/coby-headshot.jpg" alt="Coby Kalter">
+                    <div class="project-card" id="word-game">
+                        <figure>
+                            <a href="https://cobykalter.github.io/guess-the-word-game/" target="_blank"><img
+                                    src="img/guess_the_word_resized.png" alt="word game" class="project-image"></a>
+                        </figure>
+                        <h3 class="project-title">Guess The Word Game</h3>
+                        <p class="project-description">One-page JavaScript site that features a game where a user can
+                            guess a hidden word. The page uses an API to generate new words; validation to provide
+                            feedback on whether the guessed letter is correct or not; a counter to limit the number of
+                            guesses to 8; and a button that will allow for submission during gameplay or to refresh the
+                            page to play again.</p>
+                        <h4>Skills & Tools Used:</h4>
+                        <ul class="project-skills-list">
+                            <li>Vanilla JavaScript</li>
+                            <li>APIs</li>
+                            <li>Git</li>
+                            <li>CSS</li>
+                            <li>GitHub</li>
+                        </ul>
+                        <a href="https://cobykalter.github.io/guess-the-word-game/" class="project-button"
+                            target="_blank">View Project</a>
+                        <a href="https://github.com/CobyKalter/guess-the-word-game" class="project-button"
+                            target="_blank">View Code</a>
                     </div>
-                </section>
-                <section class="about-section" id="about">
-                    <div class="about-text">
-                        <h2>About me</h2>
-                        <p>With my experiences <a href="https://cokalter.wixsite.com/cobykalter" class="social-impact" target="_blank">supporting small businesses, government, and non-profits</a> I am looking for opportunities to apply my developer skills to make tools that will support small businesses, have a social impact, advance smart city technologies, and combat climate change.
-                        </p>
-                        <p>I like development because I enjoy the creative process of addressing user needs, determining technological feasability, and building new tools to solve unique problems. I decided to get into development because I have always enjoyed building things, taking things apart, and putting them back together again to understand how they work.</p>
-                        <p>
-                            When I’m not developing, I can be found hanging out with my wife & dog (soon to be son), listening to music from anywhere and anytime, being outside, climbing, biking, or enjoying the best bites NYC has to offer.
-                        </p>
+                    <div class="project-card" id="hotel-booking">
+                        <figure>
+                            <a href="https://8e5iuq.csb.app/" target="_blank"><img src="img/hotel_scrn_resized.png"
+                                    alt="hotel app screenshot" class="project-image"></a>
+                        </figure>
+                        <h3 class="project-title">Hotel Booking App</h3>
+                        <p class="project-description">One-page React app that features a list of hotels with listed
+                            amenities and ratings. App features a filter that will filter the list based on unique
+                            attributes of the hotel listing. The app makes use of JSX, ES6 functions, stateful
+                            components, and arrays to manipulate the DOM and filter out hotel listings based on certain
+                            data criteria.</p>
+                        <h4>Skills & Tools Used:</h4>
+                        <ul class="project-skills-list">
+                            <li>React</li>
+                            <li>JSX & ES6</li>
+                            <li>CodeSandbox</li>
+                        </ul>
+                        <a href="https://8e5iuq.csb.app/" class="project-button" target="_blank">View Project</a>
+                        <a href="https://codesandbox.io/s/8e5iuq" class="project-button" target="_blank">View Code</a>
                     </div>
-                    <h3 id="skills-title">Skills & Tools</h3>
-                        <ul class="skills-list">
+                    <div class="project-card" id="github-gallery">
+                        <figure>
+                            <a href="https://cobykalter.github.io/github-repo-gallery/" target="_blank"><img
+                                    src="img/github_repo_gallery_scrn_resized.png" alt="Github Repo Gallery"
+                                    class="project-image"></a>
+                        </figure>
+                        <h3 class="project-title">Github Repo Gallery</h3>
+                        <p class="project-description">One page app built with JavaScript that displays all of my Github
+                            Repos in a gallery. Uses the Github API to pull in user data, repo names and data, and
+                            features a dynamics search find repos. Each repo can be clicked for more details.</p>
+                        <h4>Skills & Tools Used:</h4>
+                        <ul class="project-skills-list">
+                            <li>JavaScript</li>
+                            <li>API</li>
+                            <li>Manipulate the DOM</li>
+                            <li>GitHub</li>
+                        </ul>
+                        <a href="https://cobykalter.github.io/github-repo-gallery/" class="project-button"
+                            target="_blank">View Project</a>
+                        <a href="https://github.com/CobyKalter/github-repo-gallery" class="project-button"
+                            target="_blank">View Code</a>
+                    </div>
+                    <div class="project-card" id="unplugged">
+                        <figure>
+                            <a href="https://cobykalter.github.io/unplugged-retreat/" target="_blank"><img
+                                    src="img/unplugged_scrn_resized.png" alt="unplugged retreat"
+                                    class="project-image"></a>
+                        </figure>
+                        <h3 class="project-title">Unplugged Retreat</h3>
+                        <p class="project-description">A three-page responsive site that features content for a retreat
+                            where participants should “unplug” from their digital devices. This mobile-first site
+                            utilizes FlexBox, media queries, and responsive typography to create a fully responsive
+                            experience. The site also features a Google Maps embedded iFrame.</p>
+                        <h4>Skills & Tools Used:</h4>
+                        <ul class="project-skills-list">
                             <li>HTML5</li>
                             <li>CSS3</li>
-                            <li>Responsive Web Design</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Git</li>
-                            <li>SQL</li>
-                            <li>ExpressJS</li>
-                            <li>APIs</li>
-                            <li>Data Analysis</li>
-                            <li>Command Line</li>
-                            <li>VS Code</li>
-                            <li>GitHub</li>
-                            <li>Chrome DevTools</li>
-                            <li>CodeSandbox</li>
-                            <li>Photoshop</li>
+                            <li>FlexBox</li>
+                            <li>Media Queries</li>
+                            <li>Google Maps iframe</li>
+                            <li>Responsive Typography</li>
                         </ul>
-                </section>
-                <section class="projects-section" id="projects">
-                    <h2>Projects</h2>
-                     <!-- Project Cards-->
-                    <div class="project-cards-wrapper">
-                        <div class="project-card" id="notes-app">
-                            <figure>
-                                <a href="https://smp8eb.csb.app/" target="_blank"><img src="img/stickynotes_scrn_resized.png" alt="sticky notes app" class="project-image"></a>
-                            </figure>
-                            <h3 class="project-title">Sticky Notes App</h3>
-                            <p class="project-description">One page app built in React that allows a user to create, type and edit, delete, and search for post it notes. The app features a search bar to search for notes with specific words; a new note button to create a note; and a way to delete notes that are no longer needed. Using React’s stateful components, JSX and ES6, and lifecycle methods the app allows users to manipulate the DOM and manage the data of each note, while saving the changes to the local storage for continuous engagement. </p>
-                            <h4>Skills & Tools Used:</h4>
-                            <ul class="project-skills-list">
-                                <li>React</li>
-                                <li>JSX & ES6</li>
-                                <li>Lifecycle Methods</li>
-                                <li>CodeSandbox</li>
-                                <li>Chrome DevTools</li>
-                            </ul>
-                            <a href="https://smp8eb.csb.app/" class="project-button" target="_blank">View Project</a>
-                            <a href="https://codesandbox.io/s/smp8eb" class="project-button" target="_blank">View Code</a>
-                        </div>
-                        <div class="project-card" id="word-game">
-                            <figure>
-                                <a href="https://cobykalter.github.io/guess-the-word-game/" target="_blank"><img src="img/guess_the_word_resized.png" alt="word game" class="project-image"></a>
-                            </figure>
-                            <h3 class="project-title">Guess The Word Game</h3>
-                            <p class="project-description">One-page JavaScript site that features a game where a user can guess a hidden word. The page uses an API to generate new words; validation to provide feedback on whether the guessed letter is correct or not; a counter to limit the number of guesses to 8; and a button that will allow for submission during gameplay or to refresh the page to play again.</p>
-                            <h4>Skills & Tools Used:</h4>
-                            <ul class="project-skills-list">
-                                <li>Vanilla JavaScript</li>
-                                <li>APIs</li>
-                                <li>Git</li>
-                                <li>CSS</li>
-                                <li>GitHub</li>
-                            </ul>
-                            <a href="https://cobykalter.github.io/guess-the-word-game/" class="project-button" target="_blank">View Project</a>
-                            <a href="https://github.com/CobyKalter/guess-the-word-game" class="project-button" target="_blank">View Code</a>
-                        </div>
-                        <div class="project-card" id="hotel-booking">
-                            <figure>
-                                <a href="https://8e5iuq.csb.app/" target="_blank"><img src="img/hotel_scrn_resized.png" alt="hotel app screenshot" class="project-image"></a>
-                            </figure>
-                            <h3 class="project-title">Hotel Booking App</h3>
-                            <p class="project-description">One-page React app that features a list of hotels with listed amenities and ratings. App features a filter that will filter the list based on unique attributes of the hotel listing. The app makes use of JSX, ES6 functions, stateful components, and arrays to manipulate the DOM and filter out hotel listings based on certain data criteria.</p>
-                            <h4>Skills & Tools Used:</h4>
-                            <ul class="project-skills-list">
-                                <li>React</li>
-                                <li>JSX & ES6</li>
-                                <li>CodeSandbox</li>
-                            </ul>
-                           <a href="https://8e5iuq.csb.app/" class="project-button" target="_blank">View Project</a>
-                           <a href="https://codesandbox.io/s/8e5iuq" class="project-button" target="_blank">View Code</a>
-                        </div>
-                        <div class="project-card" id="github-gallery">
-                            <figure>
-                                <a href="https://cobykalter.github.io/github-repo-gallery/" target="_blank"><img src="img/github_repo_gallery_scrn_resized.png" alt="Github Repo Gallery" class="project-image"></a>
-                            </figure>
-                            <h3 class="project-title">Github Repo Gallery</h3>
-                            <p class="project-description">One page app built with JavaScript that displays all of my Github Repos in a gallery. Uses the Github API to pull in user data, repo names and data, and features a dynamics search find repos. Each repo can be clicked for more details.</p>
-                            <h4>Skills & Tools Used:</h4>
-                            <ul class="project-skills-list">
-                                <li>JavaScript</li>
-                                <li>API</li>
-                                <li>Manipulate the DOM</li>
-                                <li>GitHub</li>
-                            </ul>
-                            <a href="https://cobykalter.github.io/github-repo-gallery/" class="project-button" target="_blank">View Project</a>
-                            <a href="https://github.com/CobyKalter/github-repo-gallery" class="project-button" target="_blank">View Code</a>
-                        </div>
-                        <div class="project-card" id="unplugged">
-                            <figure>
-                                <a href="https://cobykalter.github.io/unplugged-retreat/" target="_blank"><img src="img/unplugged_scrn_resized.png" alt="unplugged retreat" class="project-image"></a>
-                            </figure>
-                            <h3 class="project-title">Unplugged Retreat</h3>
-                            <p class="project-description">A three-page responsive site that features content for a retreat where participants should “unplug” from their digital devices. This mobile-first site utilizes FlexBox, media queries, and responsive typography to create a fully responsive experience. The site also features a Google Maps embedded iFrame.</p>
-                            <h4>Skills & Tools Used:</h4>
-                            <ul class="project-skills-list">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>FlexBox</li>
-                                <li>Media Queries</li>
-                                <li>Google Maps iframe</li>
-                                <li>Responsive Typography</li>
-                            </ul>
-                            <a href="https://cobykalter.github.io/unplugged-retreat/" class="project-button" target="_blank">View Project</a>
-                            <a href="https://github.com/CobyKalter/unplugged-retreat" class="project-button" target="_blank">View Code</a>
-                        </div>
+                        <a href="https://cobykalter.github.io/unplugged-retreat/" class="project-button"
+                            target="_blank">View Project</a>
+                        <a href="https://github.com/CobyKalter/unplugged-retreat" class="project-button"
+                            target="_blank">View Code</a>
                     </div>
-                   
-                </section>
-                <section id="contact">
-                    <h2>Get In Touch!</h2>
-                    <!-- Contact form template:
-                    <form class="form-wrapper">
-                        <fieldset>
-                            <label for="name">Name:</label>
-                            <input type="text" placeholder="Name" id="name">
-                            <label for="email">Email:</label>
-                            <input type="email" placeholder="email" id="email">
-                            <label for="message">Leave a Message:</label>
-                            <textarea placeholder="How can we work together?" id="message"></textarea>
-                        </fieldset>
-                        Need to add link to submit form
-                        <input type="submit" id="contact-submit" value="Send">
-                    </form>
-                -->
-                <a id="contact-submit" href="mailto:coby@cobykalter.com" rel="noopener noreferrer" target="_blank">Contact Me</a>
-                </section>
-                <section class="social-section">
-                    <h3 id="social-title">Or find me here...</h3>
-                    <!-- Add icons and <a> for SM accounts -->
-                    <p class="social-icon" id="linkedin">
-                       <a href="https://www.linkedin.com/in/coby-kalter/" target="_blank"> 
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </p>
-                    <p class="social-icon" id="github"> 
-                        <a href="https://github.com/CobyKalter" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </p>
-                    <a href="https://codesandbox.io/u/CobyKalter" target="_blank" class="social-icon" > 
-                        <img src="img/codesandbox_square_logo.png" alt="codesansbox" id="codesandbox-logo">
+                </div>
+
+            </section>
+            <section id="contact">
+                <h2>Get In Touch!</h2>
+                <a id="contact-submit" href="mailto:coby@cobykalter.com" rel="noopener noreferrer"
+                    target="_blank">Contact Me</a>
+            </section>
+            <section class="social-section">
+                <h3 id="social-title">Or find me here...</h3>
+                <p class="social-icon" id="linkedin">
+                    <a href="https://www.linkedin.com/in/coby-kalter/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <p>Coded by Coby - 2023</p>
-        <!-- Add the carbon website badge -->
-        <!--
-            <div id="wcb" class="carbonbadge wcb-d"></div>
-            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-        -->
-        <!--JS Files-->    
-            <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
-        </footer>
-    </body>
+                </p>
+                <p class="social-icon" id="github">
+                    <a href="https://github.com/CobyKalter" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </p>
+                <a href="https://codesandbox.io/u/CobyKalter" target="_blank" class="social-icon">
+                    <img src="img/codesandbox_square_logo.png" alt="codesansbox" id="codesandbox-logo">
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Coded by Coby - 2023</p>
+        <!--JavaScript Files-->
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+
 </html>

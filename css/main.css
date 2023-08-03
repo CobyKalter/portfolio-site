@@ -87,9 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* BASE STYLINGS
-   Switched background color to:  #234566 for better contrast
-   */
+/* Mobile first based on a screen size of 320px width */
+
+/* BASE STYLINGS */
+
+/* Smooth scrolling for page jumps when clicking nav buttons */
 
 html {
   scroll-behavior: smooth;
@@ -102,6 +104,8 @@ body {
     font-size: 16px;
     max-width: 1200px;
 }
+
+/* Used to hide elements */
 
 .hide {
   display: none;
@@ -168,6 +172,11 @@ header {
 #ham-menu {
   font-size: 1.25rem;   
 }
+
+/* 
+  X Mark for the Mobile navigation hamburger menu, 
+  appears when hamburger is clicked and hidden when hamburger is being displayed 
+*/
 
 .fa-xmark {
   visibility: visible;
@@ -266,6 +275,10 @@ header nav li {
   color: #BEE4F4;
 }
 
+/*
+Hover effects for link to Social Impact portfolio
+*/
+
 .social-impact:hover {
   border-bottom: 1px solid #BEE4F4;
 }
@@ -289,8 +302,6 @@ header nav li {
 }
 
 /* Project Section Stylings */
-
-/* Switched the background color and font color for the project cards to be more accessible */
 
 .projects-section {
   margin: 40px 0 60px 0;
@@ -338,8 +349,9 @@ header nav li {
     border-radius: 10px;
     color:  #BEE4F4;
     font-weight: 700;
-    margin: 20px 0 0 78px;
+    margin-bottom: 20px;
     text-align: center;
+    align-self: center;
     width: 45%;
 
 }
@@ -433,19 +445,10 @@ input, textarea {
 }
 
 
-/* footer */
+/* Footer */
 
 footer p {
   text-align: center;
-}
-
-#wcb {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 20px 0;
-}
-#wcb.carbonbadge.wcb-d {
-  font-size: .75rem;
 }
 
 /* ==========================================================================
@@ -571,7 +574,7 @@ header .header-divider {
   display: none;
 }
 
-.navmenu, .hide{
+.navmenu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -580,6 +583,10 @@ header .header-divider {
 header nav ul {
   padding-top: 10px;
 }
+
+/*
+  Hover effects for nav menu list items
+*/
 
 .nav-item a:hover {
   border-bottom: 2px solid #BEE4F4;
@@ -666,9 +673,13 @@ margin-bottom: 15px;
 
 .project-card {
   align-self: stretch;
-  flex-basis: 40%;
+  flex-basis: 35%;
   margin: 20px;
 }
+
+/*
+  Hover effects for project cards
+*/
 
 .project-card:hover {
   box-shadow: 8px 8px #BEE4F4;
@@ -679,9 +690,17 @@ margin-bottom: 15px;
   padding-top: 10px;
 }
 
+/*
+  Hover effects for project images
+*/
+
 .project-image:hover {
   border: 3px solid #234566;
 }
+
+/*
+  Hover effects for project buttons
+*/
 
 .project-button:hover {
   background-color: #FF7C09;
@@ -690,18 +709,8 @@ margin-bottom: 15px;
 
 /* Contact */
 
-/*.form-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-#contact fieldset {
-  flex-basis: 60%;
-  width: 60%;
-} */
-
 #contact h2 {
-flex-basis: 85%;
+  flex-basis: 85%;
 }
 
 #contact-submit{
@@ -709,6 +718,10 @@ flex-basis: 85%;
   width: 15%;
   text-align: center;
 }
+
+/*
+  Hover effects for contact me button
+*/
 
 #contact-submit:hover {
   background-color: #FF7C09;
@@ -727,6 +740,10 @@ flex-basis: 85%;
   margin-bottom: 20px;
 }
 
+/*
+  Hover effects for social media icons
+*/
+
 .social-icon:hover {
  transform: scale(1.15);
 }
@@ -743,14 +760,6 @@ footer p {
   flex-basis: 60%;
   text-align: center;
   padding-left: 25px;
-}
-
-#wcb {
-  justify-content: flex-end;
-}
-
-#wcb_p {
-  padding-right: 20px;
 }
 
 }
@@ -824,12 +833,6 @@ header nav {
   padding: 15px;
   width: 10%;
 }
-
-/*
-#contact fieldset {
-  width: 50%;
-} 
-*/
 
 /* Footer */
 
@@ -942,6 +945,10 @@ main {
 
 .project-card img {
   max-width: 250px;
+}
+
+.project-card ul {
+  margin-bottom: 35px;
 }
 
 /* Contact */
