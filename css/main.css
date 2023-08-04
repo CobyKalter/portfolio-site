@@ -102,7 +102,7 @@ body {
     background-color: #234566;
     color: #9CEF88;
     font-size: 16px;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 /* Used to hide elements */
@@ -546,7 +546,7 @@ footer p {
 /* body */
 
 body {
-  margin: 30px;
+  padding: 30px;
 }
 /* Header */
 
@@ -848,7 +848,9 @@ footer {
 
 /* BODY */
  
-
+body {
+  padding: 40px;
+}
  
 /* Header */
 
@@ -876,23 +878,36 @@ header nav {
 /* Main */
 
 main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   margin: 40px 0 40px 0;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 40px;
 }
 
 /* Hero */
 
 .hero-section {
   margin: 40px 0 140px 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 #hero-text {
-  flex-basis: 65%;
+  flex-basis: 60%;
 }
 
 #hero-image {
   height: 100%;
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 
 .hero-section h1 {
@@ -961,7 +976,15 @@ main {
   margin-bottom: 70px;
 }
 
+#contact-submit {
+  width: 80px;
+}
+
 /* Social */
+
+.social-section {
+  width: 100%;
+}
 
 #social-title {
   margin-bottom: 40px;
@@ -973,10 +996,6 @@ footer {
   width: 100%;
   justify-content: space-evenly;
   margin: 40px 0 100px 0;
-}
-
-#wcb_p {
-  padding-right: 0;
 }
 
 }
