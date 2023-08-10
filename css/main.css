@@ -315,6 +315,13 @@ Hover effects for link to Social Impact portfolio
   margin-bottom: 20px;
 }
 
+.project-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
 .project-card {
   background-color: #08585A;
   box-shadow: 3px 3px #BEE4F4;
@@ -326,6 +333,7 @@ Hover effects for link to Social Impact portfolio
   flex-flow: column;
   margin: 0 0 40px 0;
   padding: 15px;
+  width: 80%;
 }
 
 .project-card figure {
@@ -416,6 +424,7 @@ textarea {
   border-radius: 10px;
   color: #9CEF88;
   font-weight: 700;
+  text-align: center;
   padding: 10px;
   margin-top: 10px;
   width: 29%;
