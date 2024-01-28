@@ -462,6 +462,14 @@ textarea {
   width: 40px;
 }
 
+#replit {
+  padding-top: 10px;
+}
+
+#replit-icom {
+  color: #9CEF88;
+}
+
 
 /* Footer */
 
