@@ -622,6 +622,18 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-background-primary {
+    background-color: #FFF7CC;
+  }
+  .bg-background-secondary {
+    background-color: #CCEDE1;
+  }
+  .bg-background-alternative {
+    background-color: #4CC297;
+  }
+  .bg-background-tertiary {
+    background-color: #665600;
+  }
   .bg-transparent {
     background-color: transparent;
   }
