@@ -71,10 +71,17 @@
     text-decoration: underline dotted;
   }
   h1, h2, h3, h4, h5, h6 {
+    font-family: "Urbanist", sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  p {
+    font-family: "Lato", sans-serif;
     font-size: inherit;
     font-weight: inherit;
   }
   a {
+    font-family: 'Lato', sans-serif;
     color: inherit;
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
@@ -129,7 +136,7 @@
     height: auto;
   }
   button, input, select, optgroup, textarea, ::file-selector-button {
-    font: inherit;
+    font: "Lato" inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
     letter-spacing: inherit;
