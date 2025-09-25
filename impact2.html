@@ -17,13 +17,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Hamburger Toggle-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>
 
 </head>
+
 <body class="scroll-smooth font-['Lato', sans-serif]">
  <!--NAV BAR-->
 <section
   id="relume"
-  class="relative z-[999] flex w-full items-center justify-between border-b border-border-primary bg-background-primary bg-[#FFF7CC] lg:min-h-18 lg:px-[5%]"
+  class="fixed top-0 left-0 right-0 z-[999] flex w-full items-center justify-between border-b border-border-primary bg-background-primary bg-[#FFF7CC] lg:min-h-18 lg:px-[5%]"
 >
   <div class="size-full lg:flex lg:items-center lg:justify-between">
     <div class="lg:flex">
@@ -35,7 +48,10 @@
           ><img
             src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
             alt="Logo image" /></a
-        ><button
+        >
+        <!--Hamburger button-->
+        <button
+          id="nav-hamburger"
           class="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
         >
           <span class="my-[3px] h-0.5 w-6 bg-black"></span
@@ -45,7 +61,8 @@
       </div>
      <!--NAV LINKS-->
       <div
-        class="overflow-auto px-[5%] lg:ml-6 lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+        id="nav-menu"
+        class="overflow-auto px-[5%] lg:ml-6 lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto] hidden"
         style="height:var(--height-closed, 0)"
       >
         <a
@@ -353,7 +370,7 @@
           </div>
         </div>
       -->
-        <!--Hamburger Buttons-->
+        <!--Hamburger menu Buttons-->
         <div class="mt-6 flex w-full flex-col gap-y-4 pb-24 lg:hidden lg:pb-0">
           <button
             class="rounded-3xl rounded-button inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-border-primary text-text-primary bg-background-primary bg-[#FFF7CC] px-5 py-2 w-full hover:shadow-lg"
