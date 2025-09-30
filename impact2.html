@@ -27,7 +27,41 @@
         navMenu.classList.toggle('hidden');
       });
     }
+
+    // Carousel Functionality
+    // Select all slides and buttons
+    const slides = document.querySelectorAll('[aria-roledescription="slide"]');
+    const prevBtn = document.querySelector('button[title="Previous slide"]');
+    const nextBtn = document.querySelector('button[title="Next slide"]');
+
+    let current = 0;
+
+    // Hide all slides except the current
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    // Initial display
+    showSlide(current);
+
+    // Previous button
+    prevBtn.addEventListener('click', () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    });
+
+    // Next button
+    nextBtn.addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
+
   });
+
+  
+
 </script>
 
 </head>
@@ -803,9 +837,11 @@
                       <p class="font-semibold">Green Growth Coaching</p>
                       <!--<p>Director, ImpactNow</p>-->
                     </div>
+                    <!--
                     <div
                       class="mx-4 w-px self-stretch bg-background-alternative bg-[#4CC297] sm:mx-0"
                     ></div>
+                    -->
                     <!--
                     <div>
                       <img
@@ -925,9 +961,11 @@
                       <p class="font-semibold">Eco & Co.</p>
                       <!--<p>Director, ImpactNow</p>-->
                     </div>
+                    <!--
                     <div
                       class="mx-4 w-px self-stretch bg-background-alternative bg-[#4CC297] sm:mx-0"
                     ></div>
+                    -->
                     <!--
                     <div>
                       <img
@@ -1047,9 +1085,11 @@
                       <p class="font-semibold">CityRoots Collective</p>
                       <!--<p>Director, ImpactNow</p>-->
                     </div>
+                    <!--
                     <div
                       class="mx-4 w-px self-stretch bg-background-alternative bg-[#4CC297] sm:mx-0"
                     ></div>
+                    -->
                     <!--
                     <div>
                       <img
@@ -1083,13 +1123,13 @@
               class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light hover:shadow-lg"
             ></button
             ><button
-              class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"
+              class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light hover:shadow-lg"
             ></button>
           </div>
           <div class="flex items-end justify-end gap-2 md:gap-4">
             <button
-              class="rounded-button inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-border-primary text-text-primary rounded-full bg-neutral-white left-0 static top-0 right-0 size-12 -translate-y-0"
-              disabled=""
+              class="rounded-button inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-border-primary text-text-primary rounded-full bg-neutral-white left-0 static top-0 right-0 size-12 -translate-y-0 hover:bg-[#D9D9DA]"
+              title="Previous slide"
             >
               <svg
                 stroke="currentColor"
@@ -1103,11 +1143,12 @@
               >
                 <path
                   d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"
-                ></path></svg
-              ><span class="sr-only">Previous slide</span></button
-            ><button
-              class="rounded-button inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-border-primary text-text-primary rounded-full bg-neutral-white static top-0 right-0 size-12 -translate-y-0"
-              disabled=""
+                ></path></svg>
+              <span class="sr-only">Previous slide</span>
+            </button>
+            <button
+              class="rounded-button inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-border-primary text-text-primary rounded-full bg-neutral-white static top-0 right-0 size-12 -translate-y-0 hover:bg-[#D9D9DA]"
+              title="Next slide"
             >
               <svg
                 stroke="currentColor"
@@ -1121,8 +1162,9 @@
               >
                 <path
                   d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-                ></path></svg
-              ><span class="sr-only">Next slide</span>
+                ></path>
+              </svg>
+              <span class="sr-only">Next slide</span>
             </button>
           </div>
         </div>
